@@ -1,0 +1,115 @@
+import Hero from '@/components/Hero';
+import SectionHeader from '@/components/SectionHeader';
+import CandidateCard from '@/components/CandidateCard';
+import IssueCard from '@/components/IssueCard';
+import { candidates } from '@/data/candidates';
+import { issues } from '@/data/issues';
+
+export default function Home() {
+  // Get the first 3 candidates to display
+  const featuredCandidates = candidates.slice(0, 3);
+  
+  return (
+    <>
+      <Hero 
+        title="Voting this year is as easy as ABC: Anyone But Cuomo"
+        subtitle="Make your voice heard in the NYC mayoral democratic primary by voting based on issues, not name recognition."
+        ctaText="Explore Issues"
+        ctaLink="/issues"
+        secondaryCtaText="Learn About Rank Choice Voting"
+        secondaryCtaLink="/rank-choice"
+      />
+      
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            title="Everything to Know About the New York Mayoral Race"
+            subtitle="When is the NYC primary election? Why is this race important? Who are the candidates?"
+            centered={true}
+          />
+          
+          <div className="bg-blue-50 p-6 md:p-8 rounded-lg mb-12">
+            <h3 className="text-xl font-bold mb-4">Important Dates</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="text-blue-600 font-bold text-xl mb-2">June 22, 2025</div>
+                <div className="font-medium">Primary Election Day</div>
+                <p className="text-gray-600 mt-2">Polls open 6am to 9pm. This is your last chance to vote!</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="text-blue-600 font-bold text-xl mb-2">June 12-20, 2025</div>
+                <div className="font-medium">Early Voting Period</div>
+                <p className="text-gray-600 mt-2">Vote early at designated polling locations across the city.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="text-blue-600 font-bold text-xl mb-2">June 2, 2025</div>
+                <div className="font-medium">Registration Deadline</div>
+                <p className="text-gray-600 mt-2">Last day to register to vote in the primary election.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <h3 className="text-xl font-bold mb-4">Why This Election Matters</h3>
+              <p className="text-gray-600 mb-4">
+                The next mayor of New York City will face unprecedented challenges: recovering from the pandemic, 
+                addressing the housing crisis, reforming the police, and tackling climate change.
+              </p>
+              <p className="text-gray-600 mb-4">
+                With Andrew Cuomo entering the race, it's more important than ever to understand where candidates 
+                stand on the issues that matter most to New Yorkers.
+              </p>
+              <p className="text-gray-600">
+                This election uses ranked choice voting, giving you the power to rank up to 5 candidates in order of preference.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-bold mb-4">The ABC Approach</h3>
+              <p className="text-gray-600 mb-4">
+                <strong>A</strong>nyone <strong>B</strong>ut <strong>C</strong>uomo is more than a slogan—it's a strategy for 
+                ensuring that a progressive candidate who represents the interests of working New Yorkers wins this election.
+              </p>
+              <p className="text-gray-600 mb-4">
+                By focusing on issues rather than personalities, we can help voters make informed choices about which 
+                candidates truly align with their values.
+              </p>
+              <p className="text-gray-600">
+                Our guide highlights the five candidates endorsed by the Democratic Socialists of America (DSA) who have 
+                demonstrated their commitment to fighting for affordable housing, climate justice, and economic equality.
+              </p>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-bold mb-6">Featured Candidates</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuredCandidates.map(candidate => (
+                <CandidateCard key={candidate.id} candidate={candidate} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            title="Key Issues"
+            subtitle="What is most important to you and who are the candidates fighting for you?"
+            centered={true}
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {issues.slice(0, 6).map(issue => (
+              <IssueCard key={issue.id} issue={issue} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
