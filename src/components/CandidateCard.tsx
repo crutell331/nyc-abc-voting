@@ -20,12 +20,12 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
   
   return (
     <div className="bg-background rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-foreground/10">
-      <div className="relative h-48 w-full">
+      <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={candidate.image}
           alt={candidate.name}
           fill
-          className="object-cover"
+          className="object-contain"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
