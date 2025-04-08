@@ -8,22 +8,10 @@ export const issues: Issue[] = [
     icon: 'Home',
   },
   {
-    id: 'climate',
-    title: 'Climate Justice',
-    description: 'Plans to address climate change, reduce emissions, and create green jobs.',
-    icon: 'Leaf',
-  },
-  {
-    id: 'healthcare',
-    title: 'Healthcare',
-    description: 'Approaches to healthcare access, public health, and medical services.',
-    icon: 'HeartPulse',
-  },
-  {
-    id: 'education',
-    title: 'Education',
-    description: 'Policies on public schools, higher education, and educational equity.',
-    icon: 'Book',
+    id: 'economy',
+    title: 'Working Class Economics',
+    description: 'Policies on wages, worker protections, and economic development.',
+    icon: 'DollarSign',
   },
   {
     id: 'policing',
@@ -32,15 +20,27 @@ export const issues: Issue[] = [
     icon: 'Shield',
   },
   {
+    id: 'healthcare',
+    title: 'Healthcare',
+    description: 'Approaches to healthcare access, public health, and medical services.',
+    icon: 'HeartPulse',
+  },
+  {
     id: 'transportation',
     title: 'Public Transportation',
     description: 'Plans for improving public transit, bike lanes, and pedestrian infrastructure.',
     icon: 'Train',
   },
   {
-    id: 'economy',
-    title: 'Working Class Economics',
-    description: 'Policies on wages, worker protections, and economic development.',
-    icon: 'DollarSign',
+    id: 'education',
+    title: 'Education',
+    description: 'Policies on public schools, higher education, and educational equity.',
+    icon: 'Book',
+  },
+  {
+    id: 'climate',
+    title: 'Climate Justice',
+    description: 'Plans to address climate change, reduce emissions, and create green jobs.',
+    icon: 'Leaf',
   },
 ];

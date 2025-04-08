@@ -228,7 +228,7 @@ export default async function IssuePage({
             <div className="lg:col-span-2">
               <SectionHeader
                 title="Candidate Positions"
-                subtitle="See where each candidate stands on this issue."
+                subtitle="Ordered from most-likely to least-likely to fight for the working class on this issue"
               />
               
               <div className="space-y-8">
@@ -237,7 +237,7 @@ export default async function IssuePage({
                   if (!stance) return null;
                   
                   return (
-                    <div key={candidate.id} className="border border-gray-200 rounded-lg p-6 hover:border-primary/30 transition-colors">
+                    <div key={candidate.id} className="border-2 border-foreground/20 rounded-lg p-6 hover:border-primary/30 transition-colors shadow-md">
                       <div className="flex items-center mb-4">
                         <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
                           <Image

@@ -43,7 +43,7 @@ export const candidateStances: CandidateStance[] = [
     candidateId: 'zohran-mamdani',
     issueId: 'transportation',
     stance: 'Mamdani supports making public transit free, expanding bus and bike lanes, and improving accessibility. He advocates for congestion pricing and investing in transit infrastructure in underserved communities.',
-    rating: 4,
+    rating: 5,
   },
   // Zohran Mamdani - Economy
   {
@@ -64,8 +64,8 @@ export const candidateStances: CandidateStance[] = [
   {
     candidateId: 'andrew-cuomo',
     issueId: 'climate',
-    stance: 'Cuomo has supported some climate initiatives, including offshore wind development and the Climate Leadership and Community Protection Act. However, critics argue his administration has not moved quickly enough to transition away from fossil fuels and has not prioritized environmental justice.',
-    rating: 3,
+    stance: 'Cuomo has supported some climate initiatives, including offshore wind development and the Climate Leadership and Community Protection Act. However, critics argue, as governor, his administration did not move quickly enough to transition away from fossil fuels and did not prioritize environmental justice. He has not shared how his approach would be different if elected mayor.',
+    rating: 2,
   },
   // Andrew Cuomo - Healthcare
   {
@@ -94,14 +94,14 @@ export const candidateStances: CandidateStance[] = [
     candidateId: 'andrew-cuomo',
     issueId: 'transportation',
     stance: 'Cuomo has focused on infrastructure projects like the new Tappan Zee Bridge and LaGuardia Airport renovation. His administration has been criticized for not adequately funding the MTA and for delays in implementing congestion pricing.',
-    rating: 3,
+    rating: 2,
   },
   // Andrew Cuomo - Economy
   {
     candidateId: 'andrew-cuomo',
     issueId: 'economy',
-    stance: 'Cuomo has supported some progressive economic policies, including a $15 minimum wage and paid family leave. However, his economic development approach has favored tax incentives for corporations and has been criticized for lack of transparency and accountability.',
-    rating: 3,
+    stance: 'Cuomo has supported some progressive economic policies, including a $15 minimum wage and paid family leave. However, his economic development approach has favored tax incentives for corporations and has been criticized for lack of transparency and accountability. This makes it difficult to trust his economic policies.',
+    rating: 2,
   },
 
   // Adrienne Adams - Housing

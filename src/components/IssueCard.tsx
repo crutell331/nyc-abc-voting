@@ -5,10 +5,9 @@ import Icon from './Icon';
 
 interface IssueCardProps {
   issue: Issue;
-  showDescription?: boolean;
 }
 
-const IssueCard: React.FC<IssueCardProps> = ({ issue, showDescription = true }) => {
+const IssueCard: React.FC<IssueCardProps> = ({ issue }) => {
   return (
     <Link 
       href={`/issues/${issue.id}`}
@@ -22,18 +21,12 @@ const IssueCard: React.FC<IssueCardProps> = ({ issue, showDescription = true }) 
           <h3 className="text-xl font-bold text-foreground">{issue.title}</h3>
         </div>
         
-        {showDescription ? (
-          <p className="text-foreground/80 mb-4">
-            {issue.description}
-          </p>
-        ) : (
-          <p className="text-foreground/80 mb-4">
-            Compare candidate positions on {issue.title.toLowerCase()}.
-          </p>
-        )}
+        <p className="text-foreground/80 mb-4">
+          {issue.description}
+        </p>
         
         <div className="flex items-center text-primary font-medium">
-          <span>See candidates</span>
+          <span>See where candidates stand on this issue</span>
           <Icon name="ArrowRight" className="w-4 h-4 ml-2" />
         </div>
       </div>

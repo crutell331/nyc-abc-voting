@@ -21,7 +21,7 @@ export default function IssuesPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allIssues.map((issue: Issue) => (
-              <IssueCard key={issue.id} issue={issue} showDescription={true} />
+              <IssueCard key={issue.id} issue={issue} />
             ))}
           </div>
         </div>

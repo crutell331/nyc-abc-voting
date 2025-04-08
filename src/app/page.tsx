@@ -129,13 +129,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Key Issues"
-            subtitle="What is most important to you and who are the candidates fighting for you?"
+            subtitle="Compare candidate positions on important issues. What is most important to you and who are the candidates fighting for you?"
             centered={true}
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {issues.map((issue) => (
-              <IssueCard key={issue.id} issue={issue} showDescription={false} />
+              <IssueCard key={issue.id} issue={issue} />
             ))}
           </div>
         </div>
