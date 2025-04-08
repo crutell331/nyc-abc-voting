@@ -88,7 +88,7 @@ export default function Home() {
                 stand on the issues that matter most to New Yorkers.
               </p>
               <p className="text-foreground/80">
-                This election uses ranked choice voting, giving you the power to rank up to 5 candidates in order of preference.
+                This election uses <Link href="/rank-choice" className="text-primary hover:text-primary-dark font-bold">ranked choice voting</Link>, giving you the power to rank up to 5 candidates in order of preference.
               </p>
             </div>
             
