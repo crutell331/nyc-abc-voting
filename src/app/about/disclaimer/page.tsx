@@ -76,13 +76,7 @@ export default function DisclaimerPage() {
                 political party, or government entity.
               </p>
               <p className="text-foreground/80 mb-4">
-                The views expressed on this site do not necessarily reflect the views of any 
-                organization or individual involved in its creation. All information is presented 
-                for educational purposes only.
-              </p>
-              <p className="text-foreground/80">
-                If you believe any information on this site is inaccurate, please contact us 
-                at <a href="mailto:info@nycabcvoting.org" className="text-primary hover:text-primary-dark">info@nycabcvoting.org</a>.
+                The views expressed on this site is presented for educational purposes only.
               </p>
             </div>
           </div>
