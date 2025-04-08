@@ -7,6 +7,7 @@ import Icon from '@/components/Icon';
 import { issues } from '@/data/issues';
 import { Candidate, Issue } from '@/types';
 import { getAverageRatingForCandidate } from '@/utils/dataUtils';
+import IssueLink from '@/components/IssueLink';
 
 export default function CandidatesPage() {
   // Sort candidates by average rating in descending order
@@ -96,21 +97,7 @@ export default function CandidatesPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {issues.map((issue: Issue) => (
-              <Link 
-                key={issue.id}
-                href={`/issues/${issue.id}`}
-                className="bg-background p-6 rounded-lg shadow-sm hover:border-primary/30 border border-foreground/20 transition-colors"
-              >
-                <div className="flex items-center mb-4">
-                  <div className="bg-primary/10 p-3 rounded-full mr-4">
-                    <Icon name={issue.icon as any} className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground">{issue.title}</h3>
-                </div>
-                <p className="text-foreground/80">
-                  Compare candidate positions on {issue.title.toLowerCase()}.
-                </p>
-              </Link>
+              <IssueLink key={issue.id} issue={issue} />
             ))}
           </div>
         </div>

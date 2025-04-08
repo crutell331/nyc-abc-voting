@@ -116,7 +116,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
                       <div className="mt-4">
                         <Link 
                           href={`/candidates/${candidate.id}`}
-                          className="text-primary hover:text-primary-dark font-medium flex items-center"
+                          className="text-foreground hover:text-primary font-medium flex items-center"
                         >
                           <span>View full profile</span>
                           <Icon name="ArrowRight" className="w-4 h-4 ml-1" />
