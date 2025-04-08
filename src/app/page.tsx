@@ -31,7 +31,7 @@ export default function Home() {
     <>
       <Hero 
         title="NYC Democratic Primary Voting Guide"
-        subtitle="Make an informed decision in the NYC mayoral democratic primary based on issues, not name recognition."
+        subtitle="Vote for the candidates who will fight for you. Make an informed decision in the NYC mayoral democratic primary based on issues, not name recognition."
         ctaText="Explore Issues"
         ctaLink="/issues"
         secondaryCtaText="Meet the Candidates"
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Everything to Know About the New York Mayoral Race"
-            subtitle="When is the NYC primary election? Why is this race important? Who are the candidates?"
+            subtitle="When is the election? Why is this race important? Who are the candidates?"
             centered={true}
           />
           
