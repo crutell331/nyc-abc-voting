@@ -1,14 +1,13 @@
 import Hero from '@/components/Hero';
 import SectionHeader from '@/components/SectionHeader';
 import CandidateCard from '@/components/CandidateCard';
-import { getAllCandidates } from '@/data/candidates';
+import { candidates } from '@/data/candidates';
 import Link from 'next/link';
-import { Icon } from '@/components/Icon';
-import { getAllIssues } from '@/data/issues';
+import Icon from '@/components/Icon';
+import { issues } from '@/data/issues';
+import { Candidate, Issue } from '@/types';
 
 export default function CandidatesPage() {
-  const candidates = getAllCandidates();
-  
   return (
     <>
       <Hero 
@@ -19,7 +18,7 @@ export default function CandidatesPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {candidates.map(candidate => (
+            {candidates.map((candidate: Candidate) => (
               <CandidateCard 
                 key={candidate.id}
                 candidate={candidate}
@@ -37,7 +36,7 @@ export default function CandidatesPage() {
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {getAllIssues().map(issue => (
+            {issues.map((issue: Issue) => (
               <Link 
                 key={issue.id}
                 href={`/issues/${issue.id}`}
