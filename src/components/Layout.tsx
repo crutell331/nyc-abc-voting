@@ -74,9 +74,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-xl font-bold mb-4">Important Dates</h3>
               <ul className="space-y-2 text-foreground/80">
-                <li>Primary Election: June 22, 2025</li>
+                <li>
+                  <a 
+                    href="https://www.ny.gov/services/register-vote" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary-dark"
+                  >
+                    Registration Deadline: June 2, 2025
+                  </a>
+                </li>
                 <li>Early Voting: June 12-20, 2025</li>
-                <li>Registration Deadline: June 2, 2025</li>
+                <li>Primary Election: June 22, 2025</li>
               </ul>
             </div>
           </div>
