@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Icon from './Icon';
+import { Analytics } from '@vercel/analytics/next';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -38,6 +39,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       
       <main className="flex-grow">
         {children}
+        <Analytics />
       </main>
       
       <footer className="bg-foreground/10 text-foreground py-8">
