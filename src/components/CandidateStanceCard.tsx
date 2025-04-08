@@ -35,10 +35,10 @@ const CandidateStanceCard: React.FC<CandidateStanceCardProps> = ({
               <Icon 
                 key={i}
                 name="Star" 
-                className={`w-5 h-5 ${i < stance.rating ? 'text-yellow-500 fill-yellow-500' : 'text-gray-300'}`}
+                className={`w-5 h-5 ${i < stance.rating ? 'text-accent fill-accent' : 'text-gray-300'}`}
               />
             ))}
-            <span className="ml-2 text-sm text-gray-600">
+            <span className="ml-2 text-sm text-foreground/80">
               on {issue.title}
             </span>
           </div>
@@ -47,18 +47,18 @@ const CandidateStanceCard: React.FC<CandidateStanceCardProps> = ({
       
       <div className="p-4">
         {stance.quote && (
-          <blockquote className="italic text-gray-700 border-l-4 border-blue-500 pl-4 mb-4">
+          <blockquote className="italic text-foreground/80 border-l-4 border-primary pl-4 mb-4">
             "{stance.quote}"
           </blockquote>
         )}
         
-        <p className="text-gray-600 mb-4">
+        <p className="text-foreground/80 mb-4">
           {stance.stance}
         </p>
         
         <Link 
           href={`/candidates/${candidate.id}`}
-          className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
+          className="text-primary hover:text-primary-dark font-medium flex items-center"
         >
           <span>View full profile</span>
           <Icon name="ArrowRight" className="w-4 h-4 ml-1" />

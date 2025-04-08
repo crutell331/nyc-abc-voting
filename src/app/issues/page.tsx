@@ -2,60 +2,77 @@ import Hero from '@/components/Hero';
 import SectionHeader from '@/components/SectionHeader';
 import IssueCard from '@/components/IssueCard';
 import { issues } from '@/data/issues';
+import Link from 'next/link';
+import Icon from '@/components/Icon';
+import Image from 'next/image';
+import { candidates } from '@/data/candidates';
+import { Issue, Candidate } from '@/types';
 
 export default function IssuesPage() {
+  const allIssues = issues;
+  
   return (
     <>
       <Hero 
-        title="Key Issues in the NYC Mayoral Race"
-        subtitle="Explore where candidates stand on the issues that matter most to New Yorkers."
+        title="Key Issues"
+        subtitle="Learn about the important issues facing New York City and where candidates stand."
       />
       
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <SectionHeader
-            title="Browse Issues"
-            subtitle="Click on an issue to see which candidates best support it and their policy stances."
-          />
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {issues.map(issue => (
-              <IssueCard key={issue.id} issue={issue} />
+            {allIssues.map((issue: Issue) => (
+              <Link 
+                key={issue.id}
+                href={`/issues/${issue.id}`}
+                className="bg-white p-6 rounded-lg shadow-sm hover:border-primary/30 border border-gray-200 transition-colors"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="bg-primary/10 p-3 rounded-full mr-4">
+                    <Icon name={issue.icon as any} className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold">{issue.title}</h3>
+                </div>
+                <p className="text-foreground/80">
+                  {issue.description}
+                </p>
+              </Link>
             ))}
           </div>
         </div>
       </section>
       
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-light-bg">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <SectionHeader
-              title="Why Focus on Issues?"
-              subtitle="Understanding where candidates stand on key issues is more important than name recognition."
-              centered={true}
-            />
-            
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <p className="text-gray-600 mb-4">
-                In a crowded field of candidates, it's easy to vote based on name recognition alone. 
-                But this approach often leads to electing officials who don't actually represent our values or priorities.
-              </p>
-              
-              <p className="text-gray-600 mb-4">
-                By focusing on issues rather than personalities, we can make more informed choices about which 
-                candidates truly align with our vision for New York City.
-              </p>
-              
-              <p className="text-gray-600 mb-4">
-                The ABC (Anyone But Cuomo) approach encourages voters to look beyond the familiar names and 
-                carefully consider where each candidate stands on the issues that will shape our city's future.
-              </p>
-              
-              <p className="text-gray-600">
-                Use this guide to explore candidates' positions on housing, climate, healthcare, education, 
-                policing, transportation, and economic justice—and make your ranked choice voting decisions accordingly.
-              </p>
-            </div>
+          <SectionHeader
+            title="Compare All Candidates"
+            subtitle="See how candidates compare across all issues."
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {candidates.map((candidate: Candidate) => (
+              <Link 
+                key={candidate.id}
+                href={`/candidates/${candidate.id}`}
+                className="bg-white p-6 rounded-lg shadow-sm hover:border-primary/30 border border-gray-200 transition-colors"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
+                    <Image
+                      src={candidate.image}
+                      alt={candidate.name}
+                      fill
+                      className="object-cover"
+                      sizes="48px"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold">{candidate.name}</h3>
+                </div>
+                <p className="text-foreground/80">
+                  View {candidate.name}'s positions on all issues.
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

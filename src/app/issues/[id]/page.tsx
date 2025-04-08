@@ -7,9 +7,12 @@ import {
   getIssueById, 
   getCandidateById,
   sortCandidatesByIssueRating,
-  getCandidateStanceForIssue
+  getCandidateStanceForIssue,
+  getStancesByIssue
 } from '@/utils/dataUtils';
 import { issues } from '@/data/issues';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export function generateStaticParams() {
   return issues.map(issue => ({
@@ -24,37 +27,106 @@ export default function IssuePage({ params }: { params: { id: string } }) {
     notFound();
   }
   
-  // Get candidates sorted by their rating on this issue
-  const sortedCandidates = sortCandidatesByIssueRating(issue.id);
+  // Get all candidate stances for this issue
+  const stances = getStancesByIssue(params.id);
   
   return (
     <>
-      <Hero 
-        title={issue.title}
-        subtitle={issue.description}
-      />
-      
-      <section className="py-16 bg-white">
+      <div className="bg-gradient-to-r from-primary to-primary-dark text-white py-16">
         <div className="container mx-auto px-4">
-          <SectionHeader
-            title="Candidate Positions"
-            subtitle={`See where each candidate stands on ${issue.title.toLowerCase()}.`}
-          />
-          
-          <div className="grid grid-cols-1 gap-8">
-            {sortedCandidates.map(candidate => {
-              const stance = getCandidateStanceForIssue(candidate.id, issue.id);
-              if (!stance) return null;
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="bg-white/20 p-6 rounded-full">
+              <Icon name={issue.icon as any} className="w-12 h-12" />
+            </div>
+            
+            <div>
+              <h1 className="text-4xl font-bold mb-4">{issue.title}</h1>
+              <p className="text-xl text-white/90 max-w-2xl">
+                {issue.description}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div>
+              <SectionHeader
+                title="About this Issue"
+                subtitle="Learn more about this important topic."
+              />
               
-              return (
-                <CandidateStanceCard 
-                  key={candidate.id}
-                  candidate={candidate}
-                  stance={stance}
-                  issue={issue}
-                />
-              );
-            })}
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <p className="text-foreground/80 mb-4">
+                  {issue.description}
+                </p>
+              </div>
+            </div>
+            
+            <div className="lg:col-span-2">
+              <SectionHeader
+                title="Candidate Positions"
+                subtitle="See where each candidate stands on this issue."
+              />
+              
+              <div className="space-y-8">
+                {stances.map(stance => {
+                  const candidate = getCandidateById(stance.candidateId);
+                  if (!candidate) return null;
+                  
+                  return (
+                    <div key={stance.candidateId} className="border border-gray-200 rounded-lg p-6 hover:border-primary/30 transition-colors">
+                      <div className="flex items-center mb-4">
+                        <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
+                          <Image
+                            src={candidate.image}
+                            alt={candidate.name}
+                            fill
+                            className="object-cover"
+                            sizes="48px"
+                          />
+                        </div>
+                        
+                        <div>
+                          <h3 className="text-xl font-bold">{candidate.name}</h3>
+                          <div className="flex items-center mt-1">
+                            {Array.from({ length: 5 }).map((_, i) => (
+                              <Icon 
+                                key={i}
+                                name="Star" 
+                                className={`w-5 h-5 ${i < stance.rating ? 'text-accent fill-accent' : 'text-gray-300'}`}
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {stance.quote && (
+                        <blockquote className="italic text-foreground/80 border-l-4 border-primary pl-4 mb-4">
+                          "{stance.quote}"
+                        </blockquote>
+                      )}
+                      
+                      <p className="text-foreground/80">
+                        {stance.stance}
+                      </p>
+                      
+                      <div className="mt-4">
+                        <Link 
+                          href={`/candidates/${candidate.id}`}
+                          className="text-primary hover:text-primary-dark font-medium flex items-center"
+                        >
+                          <span>View full profile</span>
+                          <Icon name="ArrowRight" className="w-4 h-4 ml-1" />
+                        </Link>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </section>
