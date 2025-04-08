@@ -71,8 +71,10 @@ export default function RankChoicePage() {
               </p>
               
               <p className="text-foreground/80 mb-4">
-                The &ldquo;Anyone But Cuomo&rdquo; (ABC) strategy is simple: rank the five DSA-endorsed candidates 
-                featured in this guide in whatever order you prefer, but do not include Cuomo in your rankings.
+                The &ldquo;Anyone But Cuomo&rdquo; (ABC) strategy is more than a slogan—it&apos;s a strategy for ensuring
+                that a working class candidate who represents the interests of working New Yorkers wins this election.
+                Not someone who looks out for their rich friends and corporate donors and not someone who <a href="https://www.politico.com/news/2024/01/26/cuomo-sexual-harassment-doj-00138140" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:text-primary-dark underline">
+                sexually harassed, discriminated against, and bullied,</a> the very people he's supposed to protect..
               </p>
               
               <p className="text-foreground/80 mb-4">

@@ -28,7 +28,7 @@ export const rankChoiceInfo: RankChoiceInfo[] = [
   {
     step: 5,
     title: 'Why Not Rank Cuomo?',
-    description: "If you want a progressive mayor, it's important not to rank Andrew Cuomo at all. Even ranking him as your 5th choice could help him win if your higher-ranked candidates are eliminated. Remember: You don't have to use all 5 rankings.",
+    description: "If you want a mayor who will fight for working class families, immigrants, and communities of color, it's important not to rank Andrew Cuomo at all. Even ranking him as your 5th choice could help him win if your higher-ranked candidates are eliminated. Remember: You don't have to use all 5 rankings.",
     image: '/images/rank-choice/why-not-rank-cuomo-svg.svg',
   },
 ];
