@@ -1,0 +1,25 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f8f9fa" rx="5" ry="5"/>
+  
+  <!-- Two finalist candidates -->
+  <circle cx="70" cy="100" r="30" fill="#6ec9be" stroke="#2a6d65" stroke-width="2"/>
+  <circle cx="130" cy="100" r="30" fill="#47a89c" stroke="#2a6d65" stroke-width="2"/>
+  
+  <!-- Candidate numbers -->
+  <text x="70" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2a6d65" text-anchor="middle">2</text>
+  <text x="130" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2a6d65" text-anchor="middle">1</text>
+  
+  <!-- Vote percentages -->
+  <rect x="55" y="140" width="30" height="15" rx="3" ry="3" fill="#f8f9fa" stroke="#2a6d65" stroke-width="1"/>
+  <text x="70" y="152" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2a6d65" text-anchor="middle">48%</text>
+  
+  <rect x="115" y="140" width="30" height="15" rx="3" ry="3" fill="#f8f9fa" stroke="#2a6d65" stroke-width="1"/>
+  <text x="130" y="152" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2a6d65" text-anchor="middle">52%</text>
+  
+  <!-- Round indicator -->
+  <rect x="75" y="40" width="50" height="20" rx="10" ry="10" fill="#47a89c" stroke="#2a6d65" stroke-width="1"/>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">FINAL</text>
+  
+  <!-- Winner indicator -->
+  <path d="M130,55 L140,65 L160,45" fill="none" stroke="#2a6d65" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

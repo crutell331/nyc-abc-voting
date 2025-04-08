@@ -1,0 +1,45 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f8f9fa" rx="5" ry="5"/>
+  
+  <!-- Ballot icons -->
+  <g transform="translate(30, 60)">
+    <rect x="0" y="0" width="30" height="40" rx="2" ry="2" fill="white" stroke="#2a6d65" stroke-width="1"/>
+    <circle cx="15" cy="15" r="8" fill="#47a89c" stroke="#2a6d65" stroke-width="1"/>
+    <text x="15" y="19" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">1</text>
+    <line x1="5" y1="30" x2="25" y2="30" stroke="#2a6d65" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(70, 60)">
+    <rect x="0" y="0" width="30" height="40" rx="2" ry="2" fill="white" stroke="#2a6d65" stroke-width="1"/>
+    <circle cx="15" cy="15" r="8" fill="#47a89c" stroke="#2a6d65" stroke-width="1"/>
+    <text x="15" y="19" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">1</text>
+    <line x1="5" y1="30" x2="25" y2="30" stroke="#2a6d65" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(110, 60)">
+    <rect x="0" y="0" width="30" height="40" rx="2" ry="2" fill="white" stroke="#2a6d65" stroke-width="1"/>
+    <circle cx="15" cy="15" r="8" fill="#47a89c" stroke="#2a6d65" stroke-width="1"/>
+    <text x="15" y="19" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">1</text>
+    <line x1="5" y1="30" x2="25" y2="30" stroke="#2a6d65" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(150, 60)">
+    <rect x="0" y="0" width="30" height="40" rx="2" ry="2" fill="white" stroke="#2a6d65" stroke-width="1"/>
+    <circle cx="15" cy="15" r="8" fill="#6ec9be" stroke="#2a6d65" stroke-width="1"/>
+    <text x="15" y="19" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">2</text>
+    <line x1="5" y1="30" x2="25" y2="30" stroke="#2a6d65" stroke-width="1"/>
+  </g>
+  
+  <!-- Arrow pointing to counter -->
+  <path d="M100,110 L100,130" stroke="#2a6d65" stroke-width="2" fill="none"/>
+  <path d="M95,125 L100,130 L105,125" stroke="#2a6d65" stroke-width="2" fill="none"/>
+  
+  <!-- Counter box -->
+  <rect x="50" y="140" width="100" height="40" rx="5" ry="5" fill="#47a89c" stroke="#2a6d65" stroke-width="2"/>
+  <text x="100" y="160" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">FIRST CHOICE</text>
+  <text x="100" y="175" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">VOTES ONLY</text>
+  
+  <!-- "50% Wins" indicator -->
+  <rect x="50" y="20" width="100" height="30" rx="5" ry="5" fill="#2a6d65" stroke="none"/>
+  <text x="100" y="40" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">50% WINS</text>
+</svg>
