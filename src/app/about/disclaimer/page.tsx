@@ -76,7 +76,7 @@ export default function DisclaimerPage() {
                 political party, or government entity.
               </p>
               <p className="text-foreground/80 mb-4">
-                The views expressed on this site is presented for educational purposes only.
+                The views expressed on this site is presented for educational purposes only; to ensure voters have all the information they need to make informed decisions.
               </p>
             </div>
           </div>
