@@ -19,18 +19,18 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
   const averageRating = rating ?? getAverageRatingForCandidate(candidate.id);
   
   return (
-    <div className="bg-background rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-foreground/10">
+    <div className="bg-gradient-to-br from-background to-background/95 rounded-lg shadow-[0_8px_16px_rgba(0,0,0,0.1)] overflow-hidden hover:shadow-[0_12px_24px_rgba(0,0,0,0.15)] transition-all duration-300 border-2 border-foreground/20 hover:border-primary/50 hover:-translate-y-1">
       <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={candidate.image}
           alt={candidate.name}
           fill
-          className="object-contain"
+          className="object-contain transition-transform duration-500 hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       
-      <div className="p-4">
+      <div className="p-5">
         <h3 className="text-xl font-bold mb-2 text-foreground">{candidate.name}</h3>
         
         <div className="flex items-center mb-3">
@@ -66,7 +66,7 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
         
         <Link 
           href={`/candidates/${candidate.id}`}
-          className="block w-full text-center bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+          className="block w-full text-center bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded transition-colors duration-300 hover:shadow-md"
         >
           Learn More
         </Link>
