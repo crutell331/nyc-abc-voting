@@ -49,29 +49,27 @@ export default function Home() {
             <h3 className="text-xl font-bold mb-4">Important Dates</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-background p-6 rounded-lg shadow-sm">
-                <div className="text-secondary font-bold text-xl mb-2">June 2, 2025</div>
-                <div className="font-medium text-foreground">
+                <div className="text-secondary font-bold text-xl mb-2">Registration Deadline - June 2, 2025</div>
+                <p className="text-foreground/80 mt-2">Last day to register to vote in the primary election.</p>
+                <div className="mt-4">
                   <a 
                     href="https://www.ny.gov/services/register-vote" 
                     target="_blank" 
                     rel="noopener noreferrer nofollow"
-                    className="text-primary hover:text-primary-dark"
+                    className="text-primary hover:text-primary-dark font-medium"
                   >
-                    Registration Deadline
+                    Register here →
                   </a>
                 </div>
-                <p className="text-foreground/80 mt-2">Last day to register to vote in the primary election.</p>
               </div>
               
               <div className="bg-background p-6 rounded-lg shadow-sm">
-                <div className="text-secondary font-bold text-xl mb-2">June 12-20, 2025</div>
-                <div className="font-medium text-foreground">Early Voting Period</div>
+                <div className="text-secondary font-bold text-xl mb-2">Early Voting Period - June 12-20, 2025</div>
                 <p className="text-foreground/80 mt-2">Vote early at designated polling locations across the city.</p>
               </div>
               
               <div className="bg-background p-6 rounded-lg shadow-sm">
-                <div className="text-secondary font-bold text-xl mb-2">June 22, 2025</div>
-                <div className="font-medium text-foreground">Primary Election Day</div>
+                <div className="text-secondary font-bold text-xl mb-2">Primary Election Day - June 22, 2025</div>
                 <p className="text-foreground/80 mt-2">Polls open 6am to 9pm. This is your last chance to vote!</p>
               </div>
             </div>

@@ -42,7 +42,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Analytics />
       </main>
       
-      <footer className="bg-foreground/10 text-foreground py-8">
+      <footer className="bg-foreground/10 border-t-2 border-foreground/20 text-foreground py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
