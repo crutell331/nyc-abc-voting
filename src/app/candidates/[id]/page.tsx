@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Hero from '@/components/Hero';
 import SectionHeader from '@/components/SectionHeader';
 import Icon from '@/components/Icon';
+import CandidateAboutCard from '@/components/CandidateAboutCard';
 import { 
   getCandidateById, 
   getCandidateStances,
@@ -113,43 +114,7 @@ export default function CandidatePage({ params }: { params: { id: string } }) {
                 subtitle={`Learn more about ${candidate.name}'s background and experience.`}
               />
               
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <p className="text-foreground/80 mb-4">
-                  {candidate.bio}
-                </p>
-                
-                <h3 className="text-xl font-bold mb-3">Endorsements</h3>
-                <ul className="list-disc list-inside text-foreground/80 mb-4">
-                  {candidate.endorsements.map((endorsement, index) => (
-                    <li key={index}>{endorsement}</li>
-                  ))}
-                </ul>
-                
-                <h3 className="text-xl font-bold mb-3">Connect</h3>
-                <div className="flex gap-4">
-                  {candidate.website && (
-                    <a 
-                      href={candidate.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:text-primary-dark"
-                    >
-                      <Icon name="Globe" className="w-6 h-6" />
-                    </a>
-                  )}
-                  
-                  {candidate.socialMedia?.twitter && (
-                    <a 
-                      href={`https://twitter.com/${candidate.socialMedia.twitter.replace('@', '')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:text-primary-dark"
-                    >
-                      <Icon name="Twitter" className="w-6 h-6" />
-                    </a>
-                  )}
-                </div>
-              </div>
+              <CandidateAboutCard candidate={candidate} />
             </div>
             
             <div className="lg:col-span-2">
