@@ -30,6 +30,9 @@ export default function IssuePage({ params }: { params: { id: string } }) {
   // Get all candidate stances for this issue
   const stances = getStancesByIssue(params.id);
   
+  // Get candidates sorted by their rating for this issue
+  const sortedCandidates = sortCandidatesByIssueRating(params.id);
+  
   return (
     <>
       <div className="bg-gradient-to-r from-primary to-primary-dark text-white py-16">
@@ -229,12 +232,12 @@ export default function IssuePage({ params }: { params: { id: string } }) {
               />
               
               <div className="space-y-8">
-                {stances.map(stance => {
-                  const candidate = getCandidateById(stance.candidateId);
-                  if (!candidate) return null;
+                {sortedCandidates.map(candidate => {
+                  const stance = getCandidateStanceForIssue(candidate.id, params.id);
+                  if (!stance) return null;
                   
                   return (
-                    <div key={stance.candidateId} className="border border-gray-200 rounded-lg p-6 hover:border-primary/30 transition-colors">
+                    <div key={candidate.id} className="border border-gray-200 rounded-lg p-6 hover:border-primary/30 transition-colors">
                       <div className="flex items-center mb-4">
                         <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
                           <Image
