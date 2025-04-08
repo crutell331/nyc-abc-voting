@@ -5,6 +5,7 @@ import IssueCard from '@/components/IssueCard';
 import { candidates } from '@/data/candidates';
 import { issues } from '@/data/issues';
 import { getAverageRatingForCandidate } from '@/utils/dataUtils';
+import Link from 'next/link';
 
 export default function Home() {
   // Sort candidates by average rating in descending order
@@ -109,7 +110,12 @@ export default function Home() {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-6">Featured Candidates</h3>
+            <div className="flex items-end mb-6">
+              <h3 className="text-xl font-bold">Featured Candidates</h3>
+              <Link href="/candidates" className="text-primary hover:text-primary-dark font-medium ml-3">
+                See all →
+              </Link>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featuredCandidates.map(candidate => (
                 <CandidateCard key={candidate.id} candidate={candidate} />
