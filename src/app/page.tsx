@@ -70,7 +70,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">The ABC Approach</h3>
               <p className="text-foreground/80 mb-4">
                 <strong>A</strong>nyone <strong>B</strong>ut <strong>C</strong>uomo is more than a slogan—it's a strategy for 
-                ensuring that a progressive candidate who represents the interests of working New Yorkers wins this election.
+                ensuring that a working class candidate who represents the interests of working New Yorkers wins this election.
               </p>
               <p className="text-foreground/80 mb-4">
                 By focusing on issues rather than personalities, we can help voters make informed choices about which 

@@ -38,12 +38,11 @@ export default function RankChoicePage() {
               
               <div>
                 <h3 className="text-xl font-bold text-yellow-800 mb-2">Important: Don't Waste Your Vote</h3>
-                <p className="text-yellow-700 mb-4">
-                  Remember that you don't have to rank all five candidates. If you want to ensure a progressive 
-                  mayor, it's better to rank only the candidates you truly support rather than including 
-                  Andrew Cuomo in your rankings.
+                <p className="text-foreground/80 mb-4">
+                  Remember that you don't have to rank all five candidates. If you want to ensure a working class
+                  candidate wins, you can simply rank your top choices and leave Cuomo off your ballot entirely.
                 </p>
-                <p className="text-yellow-700">
+                <p className="text-foreground/80">
                   Even ranking Cuomo as your 5th choice could help him win if your higher-ranked candidates 
                   are eliminated. The "Anyone But Cuomo" strategy means exactly that—don't rank him at all.
                 </p>
@@ -58,32 +57,32 @@ export default function RankChoicePage() {
           <div className="max-w-3xl mx-auto">
             <SectionHeader
               title="Strategic Voting in the NYC Mayoral Race"
-              subtitle="How to make your vote count for progressive candidates."
+              subtitle="How to make your vote count for working class candidates."
               centered={true}
             />
             
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <h3 className="text-xl font-bold mb-4">The ABC Strategy: Anyone But Cuomo</h3>
               
-              <p className="text-gray-600 mb-4">
-                Andrew Cuomo's entry into the mayoral race presents a challenge for progressive voters. 
-                His name recognition gives him an advantage, but his record shows he often sides with 
-                corporate interests over working New Yorkers.
+              <p className="text-foreground/80 mb-4">
+                Andrew Cuomo's entry into the mayoral race presents a challenge for working class voters.
+                His name recognition and fundraising ability could allow him to advance through multiple rounds
+                of ranked choice voting, even if he's not most voters' first choice.
               </p>
               
-              <p className="text-gray-600 mb-4">
+              <p className="text-foreground/80 mb-4">
                 The "Anyone But Cuomo" (ABC) strategy is simple: rank the five DSA-endorsed candidates 
                 featured in this guide in whatever order you prefer, but do not include Cuomo in your rankings.
               </p>
               
-              <p className="text-gray-600 mb-4">
-                This approach maximizes the chance that one of these progressive candidates will win, 
-                rather than splitting the progressive vote and allowing Cuomo to benefit.
+              <p className="text-foreground/80 mb-4">
+                This approach maximizes the chance that one of these working class candidates will win,
+                rather than splitting the working class vote and allowing Cuomo to benefit.
               </p>
               
               <h3 className="text-xl font-bold mb-4 mt-8">How to Fill Out Your Ballot</h3>
               
-              <ol className="list-decimal pl-5 space-y-4 text-gray-600">
+              <ol className="list-decimal pl-5 space-y-4 text-foreground/80">
                 <li>
                   <strong>Research the candidates:</strong> Use this guide to learn about where each candidate 
                   stands on the issues that matter most to you.
