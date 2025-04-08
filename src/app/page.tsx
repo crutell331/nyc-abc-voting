@@ -80,15 +80,26 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold mb-4">Why This Election Matters</h3>
               <p className="text-foreground/80 mb-4">
-                The next mayor of New York City will face unprecedented challenges: recovering from the pandemic, 
-                addressing the housing crisis, reforming the police, and tackling climate change.
+                The next mayor of New York City will face unprecedented challenges: ensuring affordable housing, 
+                fighting for working class families, improving healthcare access and making sure our city is safe from 
+                the attacks of Donald Trump on working class citizens and people of color.
               </p>
               <p className="text-foreground/80 mb-4">
-                With Andrew Cuomo entering the race, it&apos;s more important than ever to understand where candidates 
-                stand on the issues that matter most to New Yorkers.
+                With Andrew Cuomo entering the race, he aims to use his name recognition and position as former governor to hijack. 
+                After Eric Adams&apos; tumultuous tenure and <a href="https://www.politico.com/news/2025/04/08/eric-adams-lays-out-case-for-working-with-trump-00279406?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:text-primary-dark underline">partnership with Donald Trump</a>, 
+                New York City needs a mayor who will fiercely protect working class citizens, immigrants, and communities of color.
+              </p>
+              <p className="text-foreground/80 mb-4">
+                A mayor who will fight for their people, not only for themselves and their rich friends. The next mayor must be willing 
+                to stand up to Trump&apos;s attacks on our city and fight for policies that prioritize the needs of 
+                everyday New Yorkers over corporate interests. It&apos;s more important than ever to understand where candidates 
+                stand on the issues that matter most to New Yorkers or we risk losing our city to the wealthy elite.
               </p>
               <p className="text-foreground/80">
-                This election uses <Link href="/rank-choice" className="text-primary hover:text-primary-dark underline">ranked choice voting</Link>, giving you the power to rank up to 5 candidates in order of preference.
+                This election uses <Link href="/rank-choice" className="text-primary hover:text-primary-dark underline">ranked choice voting</Link>, 
+                giving you the power to vote for, up to 5, candidates in order of preference. 
+                This is a great way to ensure that your vote counts and that your voice is heard. 
+                Fight for the New York City you deserve.
               </p>
             </div>
             
@@ -96,15 +107,25 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">The ABC Approach</h3>
               <p className="text-foreground/80 mb-4">
                 <strong>A</strong>nyone <strong>B</strong>ut <strong>C</strong>uomo is more than a slogan—it&apos;s a strategy for 
-                ensuring that a working class candidate who represents the interests of working New Yorkers wins this election.
+                ensuring that a working class candidate who represents the interests of working New Yorkers wins this election. 
+                Not someone who looks out for their rich friends and corporate donors and not someone who <a href="https://www.politico.com/news/2024/01/26/cuomo-sexual-harassment-doj-00138140" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:text-primary-dark underline">sexually harassed, discriminated, and bullied,the very people he's supposed to protect</a>.
               </p>
               <p className="text-foreground/80 mb-4">
-                By focusing on issues rather than personalities, we can help voters make informed choices about which 
+                There is a valid fear that Andrew Cuomo would not adequately protect working class New Yorkers. As governor, 
+                Cuomo consistently <a href="https://observer.com/2015/06/royally-screwed-activists-eviscerate-andrew-cuomo-after-rent-laws-deal/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:text-primary-dark underline">sided with real estate developers over tenants</a>,
+                 <a href="https://edlawcenter.org/governor-cuomo-proposes-to-shortchange-students-impacted-by-covid-19again/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:text-primary-dark underline">cut funding for public education</a>,
+                and <a href="https://www.theguardian.com/us-news/2020/jul/31/cuomo-new-york-governor-billionaires-super-rich?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:text-primary-dark underline">implemented policies that benefited wealthy donors at the expense of working families</a>.
+                 His record shows he prioritizes corporate interests and political connections over the needs of everyday New Yorkers, making 
+                him ill-suited to lead our city during these challenging times.
+              </p>
+              <p className="text-foreground/80 mb-4">
+                Politics is difficult and it's hard to know who to trust. By focusing on issues rather than personalities, we aim to help voters make informed choices about which 
                 candidates truly align with their values.
               </p>
               <p className="text-foreground/80">
-                Our guide highlights the five candidates endorsed by the Democratic Socialists of America (DSA) who have 
-                demonstrated their commitment to fighting for affordable housing, climate justice, and economic equality.
+                Our guide highlights every candidate running for NYC mayor. It details each of their stances on key issues affecting the working class.
+                 All here in one place so you can more easily see which candidates have demonstrated their commitment to fighting for you. 
+                 It's time politicans work for us, not the other way around.
               </p>
             </div>
           </div>
