@@ -93,7 +93,7 @@ export default function RankChoicePage() {
                   <strong>Rank your favorites:</strong> Choose up to five candidates and rank them in order of preference.
                 </li>
                 <li>
-                  <strong>Leave Cuomo off your ballot:</strong> Do not include Andrew Cuomo in your rankings, 
+                  <strong>Leave Cuomo off your ballot:</strong> Do not include Andrew Cuomo in your rankings, not
                   even as your 5th choice.
                 </li>
                 <li>
