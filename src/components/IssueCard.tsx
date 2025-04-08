@@ -11,21 +11,21 @@ const IssueCard: React.FC<IssueCardProps> = ({ issue }) => {
   return (
     <Link 
       href={`/issues/${issue.id}`}
-      className="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 hover:bg-blue-50"
+      className="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 hover:bg-light-bg"
     >
       <div className="p-6">
         <div className="flex items-center mb-4">
-          <div className="bg-blue-100 p-3 rounded-full mr-4">
-            <Icon name={issue.icon as any} className="w-6 h-6 text-blue-600" />
+          <div className="bg-primary/10 p-3 rounded-full mr-4">
+            <Icon name={issue.icon as any} className="w-6 h-6 text-primary" />
           </div>
           <h3 className="text-xl font-bold">{issue.title}</h3>
         </div>
         
-        <p className="text-gray-600 mb-4">
+        <p className="text-foreground/80 mb-4">
           {issue.description}
         </p>
         
-        <div className="flex items-center text-blue-600 font-medium">
+        <div className="flex items-center text-primary font-medium">
           <span>See candidates</span>
           <Icon name="ArrowRight" className="w-4 h-4 ml-2" />
         </div>

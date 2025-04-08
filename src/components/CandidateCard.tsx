@@ -38,18 +38,18 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
             <Icon 
               key={i}
               name="Star" 
-              className={`w-5 h-5 ${i < Math.round(averageRating) ? 'text-yellow-500 fill-yellow-500' : 'text-gray-300'}`}
+              className={`w-5 h-5 ${i < Math.round(averageRating) ? 'text-accent fill-accent' : 'text-gray-300'}`}
             />
           ))}
           
           {highlightIssue && (
-            <span className="ml-2 text-sm text-gray-600">
+            <span className="ml-2 text-sm text-foreground/80">
               on {highlightIssue}
             </span>
           )}
         </div>
         
-        <p className="text-gray-600 mb-4 line-clamp-3">
+        <p className="text-foreground/80 mb-4 line-clamp-3">
           {candidate.bio.substring(0, 120)}...
         </p>
         
@@ -57,7 +57,7 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
           {candidate.endorsements.map((endorsement, index) => (
             <span 
               key={index}
-              className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full"
+              className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full"
             >
               {endorsement}
             </span>
@@ -66,7 +66,7 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
         
         <Link 
           href={`/candidates/${candidate.id}`}
-          className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+          className="block w-full text-center bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded transition-colors duration-300"
         >
           Learn More
         </Link>

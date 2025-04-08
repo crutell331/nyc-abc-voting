@@ -25,13 +25,10 @@ export function getCandidatesForIssue(issueId: string): Candidate[] {
   return candidates.filter(candidate => candidateIds.includes(candidate.id));
 }
 
-export function getTopCandidatesForIssue(issueId: string, count: number = 3): Candidate[] {
+export function getTopCandidatesForIssue(issueId: string, count = 3): Candidate[] {
   const stances = getStancesByIssue(issueId);
-  // Sort by rating (highest first)
   const sortedStances = [...stances].sort((a, b) => b.rating - a.rating);
-  // Get top candidate IDs
   const topCandidateIds = sortedStances.slice(0, count).map(stance => stance.candidateId);
-  // Return candidates in order of their rating for this issue
   return topCandidateIds.map(id => getCandidateById(id)!).filter(Boolean);
 }
 
