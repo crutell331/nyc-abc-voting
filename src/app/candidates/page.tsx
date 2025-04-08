@@ -31,7 +31,7 @@ export default function CandidatesPage() {
             centered={true}
           />
           
-          <div className="bg-white p-6 rounded-lg shadow-sm mb-12">
+          <div className="bg-light-bg p-6 rounded-lg shadow-sm mb-12 border border-foreground/10">
             <div className="flex items-center mb-4">
               <div className="flex mr-4">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -42,7 +42,7 @@ export default function CandidatesPage() {
                   />
                 ))}
               </div>
-              <p className="text-foreground/80">
+              <p className="text-foreground">
                 <span className="font-bold">5 stars:</span> Strong support across all issues
               </p>
             </div>
@@ -56,7 +56,7 @@ export default function CandidatesPage() {
                   />
                 ))}
               </div>
-              <p className="text-foreground/80">
+              <p className="text-foreground">
                 <span className="font-bold">3 stars:</span> Moderate support with some inconsistencies
               </p>
             </div>
@@ -70,7 +70,7 @@ export default function CandidatesPage() {
                   />
                 ))}
               </div>
-              <p className="text-foreground/80">
+              <p className="text-foreground">
                 <span className="font-bold">1 star:</span> Limited support for working class policies
               </p>
             </div>

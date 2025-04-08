@@ -16,8 +16,8 @@ const CandidateStanceCard: React.FC<CandidateStanceCardProps> = ({
   issue
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-      <div className="flex items-center p-4 border-b">
+    <div className="bg-background rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <div className="flex items-center p-4 border-b border-foreground/10">
         <div className="relative h-16 w-16 rounded-full overflow-hidden mr-4">
           <Image
             src={candidate.image}
@@ -29,7 +29,7 @@ const CandidateStanceCard: React.FC<CandidateStanceCardProps> = ({
         </div>
         
         <div>
-          <h3 className="text-xl font-bold">{candidate.name}</h3>
+          <h3 className="text-xl font-bold text-foreground">{candidate.name}</h3>
           <div className="flex items-center">
             {Array.from({ length: 5 }).map((_, i) => (
               <Icon 

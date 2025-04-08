@@ -40,12 +40,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      <footer className="bg-foreground text-white py-8">
+      <footer className="bg-foreground/10 text-foreground py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-xl font-bold mb-4">NYC Voting Guide</h3>
-              <p className="text-gray-300">
+              <p className="text-foreground/80">
                 A resource to help voters make informed decisions in the NYC mayoral democratic primary.
               </p>
             </div>
@@ -54,17 +54,17 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/issues" className="text-gray-300 hover:text-accent transition-colors duration-200">
+                  <Link href="/issues" className="text-foreground/80 hover:text-accent transition-colors duration-200">
                     Issues
                   </Link>
                 </li>
                 <li>
-                  <Link href="/candidates" className="text-gray-300 hover:text-accent transition-colors duration-200">
+                  <Link href="/candidates" className="text-foreground/80 hover:text-accent transition-colors duration-200">
                     Candidates
                   </Link>
                 </li>
                 <li>
-                  <Link href="/rank-choice" className="text-gray-300 hover:text-accent transition-colors duration-200">
+                  <Link href="/rank-choice" className="text-foreground/80 hover:text-accent transition-colors duration-200">
                     Rank Choice Voting
                   </Link>
                 </li>
@@ -73,7 +73,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             
             <div>
               <h3 className="text-xl font-bold mb-4">Important Dates</h3>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-foreground/80">
                 <li>Primary Election: June 22, 2025</li>
                 <li>Early Voting: June 12-20, 2025</li>
                 <li>Registration Deadline: June 2, 2025</li>
@@ -81,7 +81,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
           </div>
           
-          <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+          <div className="mt-8 pt-8 border-t border-foreground/20 text-center text-foreground/70">
             <p>© {new Date().getFullYear()} NYC Voting Guide. Not affiliated with any official government entity.</p>
           </div>
         </div>

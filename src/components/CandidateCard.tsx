@@ -19,7 +19,7 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
   const averageRating = rating ?? getAverageRatingForCandidate(candidate.id);
   
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-background rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-foreground/10">
       <div className="relative h-48 w-full">
         <Image
           src={candidate.image}
@@ -31,14 +31,14 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
       </div>
       
       <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">{candidate.name}</h3>
+        <h3 className="text-xl font-bold mb-2 text-foreground">{candidate.name}</h3>
         
         <div className="flex items-center mb-3">
           {Array.from({ length: 5 }).map((_, i) => (
             <Icon 
               key={i}
               name="Star" 
-              className={`w-5 h-5 ${i < Math.round(averageRating) ? 'text-accent fill-accent' : 'text-gray-300'}`}
+              className={`w-5 h-5 ${i < Math.round(averageRating) ? 'text-accent fill-accent' : 'text-foreground/30'}`}
             />
           ))}
           

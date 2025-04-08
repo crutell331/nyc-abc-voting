@@ -4,7 +4,7 @@ export interface Candidate {
   image: string;
   bio: string;
   endorsements: string[];
-  website: string;
+  website: string | null;
   socialMedia: {
     twitter?: string;
     instagram?: string;

@@ -4,9 +4,27 @@ import CandidateCard from '@/components/CandidateCard';
 import IssueCard from '@/components/IssueCard';
 import { candidates } from '@/data/candidates';
 import { issues } from '@/data/issues';
+import { getAverageRatingForCandidate } from '@/utils/dataUtils';
 
 export default function Home() {
-  const featuredCandidates = candidates.slice(0, 3);
+  // Sort candidates by average rating in descending order
+  const sortedCandidates = [...candidates].sort((a, b) => {
+    const ratingA = getAverageRatingForCandidate(a.id);
+    const ratingB = getAverageRatingForCandidate(b.id);
+    return ratingB - ratingA;
+  });
+  
+  // Get the 2 highest ranking candidates
+  const topCandidates = sortedCandidates.slice(0, 2);
+  
+  // Find Andrew Cuomo
+  const cuomo = candidates.find(candidate => candidate.id === 'andrew-cuomo');
+  
+  // Combine top candidates with Cuomo
+  const featuredCandidates = [...topCandidates];
+  if (cuomo) {
+    featuredCandidates.push(cuomo);
+  }
   
   return (
     <>
@@ -30,21 +48,21 @@ export default function Home() {
           <div className="bg-light-bg p-6 md:p-8 rounded-lg mb-12">
             <h3 className="text-xl font-bold mb-4">Important Dates</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-background p-6 rounded-lg shadow-sm">
                 <div className="text-secondary font-bold text-xl mb-2">June 22, 2025</div>
-                <div className="font-medium">Primary Election Day</div>
+                <div className="font-medium text-foreground">Primary Election Day</div>
                 <p className="text-foreground/80 mt-2">Polls open 6am to 9pm. This is your last chance to vote!</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-background p-6 rounded-lg shadow-sm">
                 <div className="text-secondary font-bold text-xl mb-2">June 12-20, 2025</div>
-                <div className="font-medium">Early Voting Period</div>
+                <div className="font-medium text-foreground">Early Voting Period</div>
                 <p className="text-foreground/80 mt-2">Vote early at designated polling locations across the city.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-background p-6 rounded-lg shadow-sm">
                 <div className="text-secondary font-bold text-xl mb-2">June 2, 2025</div>
-                <div className="font-medium">Registration Deadline</div>
+                <div className="font-medium text-foreground">Registration Deadline</div>
                 <p className="text-foreground/80 mt-2">Last day to register to vote in the primary election.</p>
               </div>
             </div>
