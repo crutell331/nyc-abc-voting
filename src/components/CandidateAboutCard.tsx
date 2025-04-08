@@ -26,7 +26,7 @@ const CandidateAboutCard: React.FC<CandidateAboutCardProps> = ({ candidate }) =>
           <a 
             href={candidate.website}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={`noopener noreferrer${candidate.id !== 'zohran-mamdani' ? ' nofollow' : ''}`}
             className="text-primary hover:text-primary-dark"
           >
             <Icon name="Globe" className="w-6 h-6" />
@@ -37,7 +37,7 @@ const CandidateAboutCard: React.FC<CandidateAboutCardProps> = ({ candidate }) =>
           <a 
             href={`https://twitter.com/${candidate.socialMedia.twitter.replace('@', '')}`}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={`noopener noreferrer${candidate.id !== 'zohran-mamdani' ? ' nofollow' : ''}`}
             className="text-primary hover:text-primary-dark"
           >
             <Icon name="Twitter" className="w-6 h-6" />

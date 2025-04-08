@@ -80,7 +80,7 @@ export default function CandidatePage({ params }: { params: { id: string } }) {
                   <a 
                     href={candidate.website}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel={`noopener noreferrer${candidate.id !== 'zohran-mamdani' ? ' nofollow' : ''}`}
                     className="bg-white text-primary hover:bg-accent hover:text-white font-bold py-2 px-4 rounded transition-colors duration-300 flex items-center justify-center"
                   >
                     <Icon name="Globe" className="w-5 h-5 mr-2" />
@@ -92,7 +92,7 @@ export default function CandidatePage({ params }: { params: { id: string } }) {
                   <a 
                     href={`https://twitter.com/${candidate.socialMedia.twitter.replace('@', '')}`}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel={`noopener noreferrer${candidate.id !== 'zohran-mamdani' ? ' nofollow' : ''}`}
                     className="bg-white text-primary hover:bg-accent hover:text-white font-bold py-2 px-4 rounded transition-colors duration-300 flex items-center justify-center"
                   >
                     <Icon name="Twitter" className="w-5 h-5 mr-2" />

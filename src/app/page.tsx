@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Hero 
-        title="NYC Voting Guide"
+        title="NYC Democratic Primary Voting Guide"
         subtitle="Make an informed decision in the NYC mayoral democratic primary based on issues, not name recognition."
         ctaText="Explore Issues"
         ctaLink="/issues"
@@ -54,7 +54,7 @@ export default function Home() {
                   <a 
                     href="https://www.ny.gov/services/register-vote" 
                     target="_blank" 
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="text-primary hover:text-primary-dark"
                   >
                     Registration Deadline

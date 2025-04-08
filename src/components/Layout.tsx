@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
           <Link href="/" className="text-2xl font-bold flex items-center mb-4 md:mb-0">
             <Icon name="Vote" className="w-8 h-8 mr-2" />
-            <span>NYC Voting Guide</span>
+            <span>NYC Democratic Primary Voting Guide</span>
           </Link>
           
           <nav className="flex flex-wrap justify-center gap-6">
@@ -44,7 +44,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">NYC Voting Guide</h3>
+              <h3 className="text-xl font-bold mb-4">NYC Democratic Primary Voting Guide</h3>
               <p className="text-foreground/80">
                 A resource to help voters make informed decisions in the NYC mayoral democratic primary.
               </p>
@@ -78,7 +78,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <a 
                     href="https://www.ny.gov/services/register-vote" 
                     target="_blank" 
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="text-primary hover:text-primary-dark"
                   >
                     Registration Deadline: June 2, 2025
@@ -91,7 +91,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
           
           <div className="mt-8 pt-8 border-t border-foreground/20 text-center text-foreground/70">
-            <p>© {new Date().getFullYear()} NYC Voting Guide. Not affiliated with any official government entity.</p>
+            <p>© {new Date().getFullYear()} NYC Democratic Primary Voting Guide. Not affiliated with any official government entity.</p>
           </div>
         </div>
       </footer>

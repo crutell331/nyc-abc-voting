@@ -50,6 +50,6 @@ describe('Layout Component', () => {
     
     // Check for copyright with current year
     const currentYear = new Date().getFullYear();
-    expect(screen.getByText(new RegExp(`© ${currentYear} NYC Voting Guide`))).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(`© ${currentYear} NYC Democratic Primary Voting Guide`))).toBeInTheDocument();
   });
 });

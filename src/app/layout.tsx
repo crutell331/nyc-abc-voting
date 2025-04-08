@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NYC Voting Guide - Anyone But Cuomo (ABC)",
+  title: "NYC Democratic Primary Voting Guide - Anyone But Cuomo (ABC)",
   description: "A guide to help voters make informed decisions in the NYC mayoral democratic primary based on issues, not name recognition.",
 };
 
