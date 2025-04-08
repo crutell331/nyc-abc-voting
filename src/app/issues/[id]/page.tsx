@@ -16,15 +16,22 @@ export function generateStaticParams() {
   }));
 }
 
-export default function IssuePage({ params }: { params: { id: string } }) {
-  const issue = getIssueById(params.id);
+export default async function IssuePage({ 
+  params 
+}: { 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  params: Promise<any> 
+}) {
+  // Resolve the params promise if needed
+  const resolvedParams = await Promise.resolve(params);
+  const issue = getIssueById(resolvedParams.id);
   
   if (!issue) {
     notFound();
   }
   
   // Get candidates sorted by their rating for this issue
-  const sortedCandidates = sortCandidatesByIssueRating(params.id);
+  const sortedCandidates = sortCandidatesByIssueRating(resolvedParams.id);
   
   return (
     <>
@@ -226,7 +233,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
               
               <div className="space-y-8">
                 {sortedCandidates.map(candidate => {
-                  const stance = getCandidateStanceForIssue(candidate.id, params.id);
+                  const stance = getCandidateStanceForIssue(candidate.id, resolvedParams.id);
                   if (!stance) return null;
                   
                   return (

@@ -17,8 +17,16 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CandidatePage({ params }: { params: { id: string } }) {
-  const candidate = getCandidateById(params.id);
+// In Next.js 15, params are resolved as promises
+export default async function CandidatePage({ 
+  params 
+}: { 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  params: Promise<any> 
+}) {
+  // Resolve the params promise if needed
+  const resolvedParams = await Promise.resolve(params);
+  const candidate = getCandidateById(resolvedParams.id);
   
   if (!candidate) {
     notFound();
