@@ -1,14 +1,10 @@
 import { notFound } from 'next/navigation';
-import Hero from '@/components/Hero';
 import SectionHeader from '@/components/SectionHeader';
-import CandidateStanceCard from '@/components/CandidateStanceCard';
 import Icon from '@/components/Icon';
 import { 
   getIssueById, 
-  getCandidateById,
   sortCandidatesByIssueRating,
-  getCandidateStanceForIssue,
-  getStancesByIssue
+  getCandidateStanceForIssue
 } from '@/utils/dataUtils';
 import { issues } from '@/data/issues';
 import Image from 'next/image';
@@ -27,9 +23,6 @@ export default function IssuePage({ params }: { params: { id: string } }) {
     notFound();
   }
   
-  // Get all candidate stances for this issue
-  const stances = getStancesByIssue(params.id);
-  
   // Get candidates sorted by their rating for this issue
   const sortedCandidates = sortCandidatesByIssueRating(params.id);
   
@@ -39,7 +32,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="bg-white/20 p-6 rounded-full">
-              <Icon name={issue.icon as any} className="w-12 h-12" />
+              <Icon name={issue.icon} className="w-12 h-12" />
             </div>
             
             <div>
@@ -83,7 +76,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
                       <li className="mb-2">Supporting community land trusts and cooperative housing models</li>
                     </ul>
                     <p>
-                      The next mayor will need to balance the interests of tenants, homeowners, developers, and the city's overall housing needs.
+                      The next mayor will need to balance the interests of tenants, homeowners, developers, and the city&apos;s overall housing needs.
                     </p>
                   </div>
                 )}
@@ -135,7 +128,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
                 {issue.id === 'education' && (
                   <div className="text-foreground/80">
                     <p className="mb-4">
-                      New York City's public school system remains deeply segregated, with stark disparities in resources, 
+                      New York City&apos;s public school system remains deeply segregated, with stark disparities in resources, 
                       facilities, and educational outcomes between schools in wealthy and low-income neighborhoods.
                     </p>
                     <p className="mb-4">
@@ -180,7 +173,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
                 {issue.id === 'transportation' && (
                   <div className="text-foreground/80">
                     <p className="mb-4">
-                      New York City's public transportation system is facing significant challenges, from aging infrastructure 
+                      New York City&apos;s public transportation system is facing significant challenges, from aging infrastructure 
                       and service cuts to accessibility issues and the need for more sustainable transportation options.
                     </p>
                     <p className="mb-4">
@@ -265,7 +258,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
                       
                       {stance.quote && (
                         <blockquote className="italic text-foreground/80 border-l-4 border-primary pl-4 mb-4">
-                          "{stance.quote}"
+                          &ldquo;{stance.quote}&rdquo;
                         </blockquote>
                       )}
                       
@@ -358,7 +351,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
                     <h3 className="text-xl font-bold text-foreground">Educational Equity</h3>
                   </div>
                   <p className="text-foreground/80 mb-4">
-                    New York City's public school system remains deeply segregated, with stark disparities in resources, 
+                    New York City&apos;s public school system remains deeply segregated, with stark disparities in resources, 
                     facilities, and educational outcomes between schools in wealthy and low-income neighborhoods.
                   </p>
                   <p className="text-foreground/80 mb-4">
@@ -392,7 +385,7 @@ export default function IssuePage({ params }: { params: { id: string } }) {
                     <h3 className="text-xl font-bold text-foreground">Public Transportation</h3>
                   </div>
                   <p className="text-foreground/80 mb-4">
-                    New York City's public transportation system is facing significant challenges, from aging infrastructure 
+                    New York City&apos;s public transportation system is facing significant challenges, from aging infrastructure 
                     and service cuts to accessibility issues and the need for more sustainable transportation options.
                   </p>
                   <p className="text-foreground/80 mb-4">

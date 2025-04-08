@@ -16,7 +16,7 @@ export default function RankChoicePage() {
         <div className="container mx-auto px-4">
           <SectionHeader
             title="How Ranked Choice Voting Works"
-            subtitle="NYC uses ranked choice voting for primary and special elections. Here's what you need to know."
+            subtitle="NYC uses ranked choice voting for primary and special elections. Here&apos;s what you need to know."
             centered={true}
           />
           
@@ -37,14 +37,14 @@ export default function RankChoicePage() {
               </div>
               
               <div>
-                <h3 className="text-xl font-bold text-yellow-800 mb-2">Important: Don't Waste Your Vote</h3>
+                <h3 className="text-xl font-bold text-yellow-800 mb-2">Important: Don&apos;t Waste Your Vote</h3>
                 <p className="text-foreground/80 mb-4">
-                  Remember that you don't have to rank all five candidates. If you want to ensure a working class
+                  Remember that you don&apos;t have to rank all five candidates. If you want to ensure a working class
                   candidate wins, you can simply rank your top choices and leave Cuomo off your ballot entirely.
                 </p>
                 <p className="text-foreground/80">
                   Even ranking Cuomo as your 5th choice could help him win if your higher-ranked candidates 
-                  are eliminated. The "Anyone But Cuomo" strategy means exactly that—don't rank him at all.
+                  are eliminated. The &ldquo;Anyone But Cuomo&rdquo; strategy means exactly that—don&apos;t rank him at all.
                 </p>
               </div>
             </div>
@@ -65,13 +65,13 @@ export default function RankChoicePage() {
               <h3 className="text-xl font-bold mb-4">The ABC Strategy: Anyone But Cuomo</h3>
               
               <p className="text-foreground/80 mb-4">
-                Andrew Cuomo's entry into the mayoral race presents a challenge for working class voters.
+                Andrew Cuomo&apos;s entry into the mayoral race presents a challenge for working class voters.
                 His name recognition and fundraising ability could allow him to advance through multiple rounds
-                of ranked choice voting, even if he's not most voters' first choice.
+                of ranked choice voting, even if he&apos;s not most voters&apos; first choice.
               </p>
               
               <p className="text-foreground/80 mb-4">
-                The "Anyone But Cuomo" (ABC) strategy is simple: rank the five DSA-endorsed candidates 
+                The &ldquo;Anyone But Cuomo&rdquo; (ABC) strategy is simple: rank the five DSA-endorsed candidates 
                 featured in this guide in whatever order you prefer, but do not include Cuomo in your rankings.
               </p>
               

@@ -6,7 +6,7 @@ import { Candidate } from '@/types';
 // Mock the next/image component
 jest.mock('next/image', () => ({
   __esModule: true,
-  default: (props: any) => {
+  default: (props: { src: string; alt: string; [key: string]: unknown }) => {
     // eslint-disable-next-line @next/next/no-img-element
     return <img {...props} src={props.src} alt={props.alt} />;
   },
@@ -15,8 +15,8 @@ jest.mock('next/image', () => ({
 // Mock the next/link component
 jest.mock('next/link', () => ({
   __esModule: true,
-  default: ({ children, href }: { children: React.ReactNode; href: string }) => {
-    return <a href={href}>{children}</a>;
+  default: (props: { children: React.ReactNode; href: string }) => {
+    return <a href={props.href}>{props.children}</a>;
   },
 }));
 

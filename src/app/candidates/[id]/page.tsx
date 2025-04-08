@@ -1,7 +1,5 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import Link from 'next/link';
-import Hero from '@/components/Hero';
 import SectionHeader from '@/components/SectionHeader';
 import Icon from '@/components/Icon';
 import CandidateAboutCard from '@/components/CandidateAboutCard';
@@ -156,7 +154,7 @@ export default function CandidatePage({ params }: { params: { id: string } }) {
                     <div key={stance.issueId} className="border border-gray-200 rounded-lg p-6 hover:border-primary/30 transition-colors">
                       <div className="flex items-center mb-4">
                         <div className="bg-primary/10 p-3 rounded-full mr-4">
-                          <Icon name={issue.icon as any} className="w-6 h-6 text-primary" />
+                          <Icon name={issue.icon} className="w-6 h-6 text-primary" />
                         </div>
                         
                         <div>
@@ -175,7 +173,7 @@ export default function CandidatePage({ params }: { params: { id: string } }) {
                       
                       {stance.quote && (
                         <blockquote className="italic text-foreground/80 border-l-4 border-primary pl-4 mb-4">
-                          "{stance.quote}"
+                          &ldquo;{stance.quote}&rdquo;
                         </blockquote>
                       )}
                       

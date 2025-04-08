@@ -3,7 +3,6 @@ import SectionHeader from '@/components/SectionHeader';
 import IssueCard from '@/components/IssueCard';
 import { issues } from '@/data/issues';
 import Link from 'next/link';
-import Icon from '@/components/Icon';
 import Image from 'next/image';
 import { candidates } from '@/data/candidates';
 import { Issue, Candidate } from '@/types';
@@ -55,7 +54,7 @@ export default function IssuesPage() {
                   <h3 className="text-xl font-bold text-foreground">{candidate.name}</h3>
                 </div>
                 <p className="text-foreground/80">
-                  View {candidate.name}'s positions on all issues.
+                  View {candidate.name}&apos;s positions on all issues.
                 </p>
               </Link>
             ))}

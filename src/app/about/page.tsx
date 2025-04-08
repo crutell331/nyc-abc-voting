@@ -7,7 +7,7 @@ export default function AboutPage() {
     <>
       <Hero 
         title="About the ABC Campaign"
-        subtitle="Learn more about the 'Anyone But Cuomo' initiative and why it matters for the future of NYC."
+        subtitle="Learn more about the &apos;Anyone But Cuomo&apos; initiative and why it matters for the future of NYC."
       />
       
       <section className="py-16 bg-background">
@@ -20,8 +20,8 @@ export default function AboutPage() {
               />
               
               <p className="text-foreground/80 mb-6">
-                The "Anyone But Cuomo" (ABC) campaign was created by a coalition of working class organizations
-                and activists who recognize the importance of preventing Andrew Cuomo from becoming NYC's next mayor.
+                The &ldquo;Anyone But Cuomo&rdquo; (ABC) campaign was created by a coalition of working class organizations
+                and activists who recognize the importance of preventing Andrew Cuomo from becoming NYC&apos;s next mayor.
               </p>
               
               <p className="text-foreground/80 mb-6">
@@ -31,7 +31,7 @@ export default function AboutPage() {
               
               <p className="text-foreground/80 mb-6">
                 We believe that by focusing on issues rather than personalities, we can help elect a mayor 
-                who will address the city's most pressing challenges: affordable housing, climate justice, 
+                who will address the city&apos;s most pressing challenges: affordable housing, climate justice, 
                 healthcare access, educational equity, police reform, public transportation, and working class economics.
               </p>
               
@@ -68,13 +68,18 @@ export default function AboutPage() {
             
             <div>
               <SectionHeader
-                title="Why 'Anyone But Cuomo'?"
-                subtitle="Understanding Andrew Cuomo's record and why we believe NYC deserves better."
+                title="Why &apos;Anyone But Cuomo&apos;?"
+                subtitle="Understanding Andrew Cuomo&apos;s record and why we believe NYC deserves better."
               />
               
               <p className="text-foreground/80 mb-6">
-                Andrew Cuomo's entry into the mayoral race has raised concerns among working class organizations
-                and activists who remember his track record as governor.
+                As Governor, Cuomo&apos;s policies consistently favored wealthy donors and corporate interests over the needs
+                of working-class New Yorkers. His administration was marked by corruption scandals, cover-ups, and a
+                complete disregard for transparency and accountability.
+              </p>
+              <p className="text-foreground/80 mb-6">
+                Now, he&apos;s attempting to become NYC&apos;s next mayor, despite his history of mismanagement and
+                misconduct. We believe that New York City deserves better than a mayor with such a troubling track record.
               </p>
               
               <div className="space-y-6 mb-8">
@@ -98,7 +103,7 @@ export default function AboutPage() {
                 <div className="border-l-4 border-secondary pl-4">
                   <h4 className="font-bold mb-2">Mishandling of the Pandemic</h4>
                   <p className="text-foreground/80">
-                    Cuomo's handling of the COVID-19 pandemic raised serious concerns, particularly regarding 
+                    Cuomo&apos;s handling of the COVID-19 pandemic raised serious concerns, particularly regarding 
                     nursing home deaths and the prioritization of political optics over public health.
                   </p>
                 </div>
@@ -106,7 +111,7 @@ export default function AboutPage() {
                 <div className="border-l-4 border-secondary pl-4">
                   <h4 className="font-bold mb-2">Ethical Concerns</h4>
                   <p className="text-foreground/80">
-                    Cuomo's administration was plagued by ethical scandals, including allegations of sexual 
+                    Cuomo&apos;s administration was plagued by ethical scandals, including allegations of sexual 
                     harassment, misuse of state resources, and interference with anti-corruption investigations.
                   </p>
                 </div>
@@ -114,7 +119,7 @@ export default function AboutPage() {
               
               <p className="text-foreground/80">
                 Given this record, we believe that New York City deserves a mayor who will truly represent 
-                the interests of all New Yorkers, not just the powerful and well-connected. That's why we're 
+                the interests of all New Yorkers, not just the powerful and well-connected. That&apos;s why we&apos;re 
                 advocating for voters to consider any of the working class candidates featured in this guide 
                 before considering Andrew Cuomo.
               </p>
@@ -160,7 +165,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Vote</h3>
               <p className="text-foreground/80 mb-4">
-                Most importantly, make sure you're registered to vote and have a plan for voting in the 
+                Most importantly, make sure you&apos;re registered to vote and have a plan for voting in the 
                 primary election. Remember to use ranked choice voting strategically!
               </p>
             </div>

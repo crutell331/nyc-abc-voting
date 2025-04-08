@@ -2,7 +2,6 @@ import Hero from '@/components/Hero';
 import SectionHeader from '@/components/SectionHeader';
 import CandidateCard from '@/components/CandidateCard';
 import { candidates } from '@/data/candidates';
-import Link from 'next/link';
 import Icon from '@/components/Icon';
 import { issues } from '@/data/issues';
 import { Candidate, Issue } from '@/types';

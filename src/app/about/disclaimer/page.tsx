@@ -47,10 +47,10 @@ export default function DisclaimerPage() {
             <div className="bg-light-bg p-6 rounded-lg mb-8">
               <p className="text-foreground/80 mb-4">
                 While we strive to provide accurate and comprehensive information, the definitive source 
-                for any candidate's positions is their official campaign website and public statements.
+                for any candidate&apos;s positions is their official campaign website and public statements.
               </p>
               <p className="text-foreground/80 mb-4">
-                We strongly encourage all users to visit each candidate's official website to verify 
+                We strongly encourage all users to visit each candidate&apos;s official website to verify 
                 information and learn more about their complete platforms and positions.
               </p>
               <div className="mt-6">

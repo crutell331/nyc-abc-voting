@@ -6,9 +6,17 @@ import { RankChoiceInfo } from '@/types';
 // Mock the next/image component
 jest.mock('next/image', () => ({
   __esModule: true,
-  default: (props: any) => {
+  default: (props: { src: string; alt: string; [key: string]: unknown }) => {
     // eslint-disable-next-line @next/next/no-img-element
     return <img {...props} src={props.src} alt={props.alt} />;
+  },
+}));
+
+// Mock the next/link component
+jest.mock('next/link', () => ({
+  __esModule: true,
+  default: (props: { children: React.ReactNode; href: string }) => {
+    return <a href={props.href}>{props.children}</a>;
   },
 }));
 
@@ -31,7 +39,7 @@ describe('RankChoiceStep Component', () => {
     
     expect(screen.getByText('1')).toBeInTheDocument();
     expect(screen.getByText('Rank Your Top 5 Candidates')).toBeInTheDocument();
-    expect(screen.getByText('In NYC's ranked choice voting system, you can rank up to 5 candidates in order of preference.')).toBeInTheDocument();
+    expect(screen.getByText('In NYC&apos;s ranked choice voting system, you can rank up to 5 candidates in order of preference.')).toBeInTheDocument();
     expect(screen.getByAltText('Rank Your Top 5 Candidates')).toBeInTheDocument();
   });
 

@@ -85,7 +85,7 @@ export default function Home() {
                 addressing the housing crisis, reforming the police, and tackling climate change.
               </p>
               <p className="text-foreground/80 mb-4">
-                With Andrew Cuomo entering the race, it's more important than ever to understand where candidates 
+                With Andrew Cuomo entering the race, it&apos;s more important than ever to understand where candidates 
                 stand on the issues that matter most to New Yorkers.
               </p>
               <p className="text-foreground/80">
@@ -96,7 +96,7 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold mb-4">The ABC Approach</h3>
               <p className="text-foreground/80 mb-4">
-                <strong>A</strong>nyone <strong>B</strong>ut <strong>C</strong>uomo is more than a slogan—it's a strategy for 
+                <strong>A</strong>nyone <strong>B</strong>ut <strong>C</strong>uomo is more than a slogan—it&apos;s a strategy for 
                 ensuring that a working class candidate who represents the interests of working New Yorkers wins this election.
               </p>
               <p className="text-foreground/80 mb-4">

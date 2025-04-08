@@ -48,7 +48,7 @@ const CandidateStanceCard: React.FC<CandidateStanceCardProps> = ({
       <div className="p-4">
         {stance.quote && (
           <blockquote className="italic text-foreground/80 border-l-4 border-primary pl-4 mb-4">
-            "{stance.quote}"
+            &ldquo;{stance.quote}&rdquo;
           </blockquote>
         )}
         

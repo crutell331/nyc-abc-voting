@@ -15,7 +15,7 @@ const IssueLink: React.FC<IssueLinkProps> = ({ issue }) => {
     >
       <div className="flex items-center mb-4">
         <div className="bg-primary/10 p-3 rounded-full mr-4">
-          <Icon name={issue.icon as any} className="w-6 h-6 text-primary" />
+          <Icon name={issue.icon} className="w-5 h-5 text-primary" />
         </div>
         <h3 className="text-xl font-bold text-foreground">{issue.title}</h3>
       </div>
