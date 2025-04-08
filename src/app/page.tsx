@@ -45,7 +45,7 @@ export default function Home() {
             centered={true}
           />
           
-          <div className="bg-light-bg p-6 md:p-8 rounded-lg mb-12">
+          <div className="bg-foreground/5 p-6 md:p-8 rounded-lg mb-12 border border-foreground/20 shadow-md">
             <h3 className="text-xl font-bold mb-4">Important Dates</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-background p-6 rounded-lg shadow-sm">
