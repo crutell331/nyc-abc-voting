@@ -43,6 +43,28 @@ const CandidateAboutCard: React.FC<CandidateAboutCardProps> = ({ candidate }) =>
             <Icon name="Twitter" className="w-6 h-6" />
           </a>
         )}
+        
+        {candidate.socialMedia?.instagram && (
+          <a 
+            href={`https://instagram.com/${candidate.socialMedia.instagram.replace('@', '')}`}
+            target="_blank"
+            rel={`noopener noreferrer${candidate.id !== 'zohran-mamdani' ? ' nofollow' : ''}`}
+            className="text-primary hover:text-primary-dark"
+          >
+            <Icon name="Instagram" className="w-6 h-6" />
+          </a>
+        )}
+        
+        {candidate.socialMedia?.facebook && (
+          <a 
+            href={`https://facebook.com/${candidate.socialMedia.facebook}`}
+            target="_blank"
+            rel={`noopener noreferrer${candidate.id !== 'zohran-mamdani' ? ' nofollow' : ''}`}
+            className="text-primary hover:text-primary-dark"
+          >
+            <Icon name="Facebook" className="w-6 h-6" />
+          </a>
+        )}
       </div>
     </div>
   );

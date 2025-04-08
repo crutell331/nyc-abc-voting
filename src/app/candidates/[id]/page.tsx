@@ -99,6 +99,30 @@ export default function CandidatePage({ params }: { params: { id: string } }) {
                     Follow on Twitter
                   </a>
                 )}
+                
+                {candidate.socialMedia?.instagram && (
+                  <a 
+                    href={`https://instagram.com/${candidate.socialMedia.instagram.replace('@', '')}`}
+                    target="_blank"
+                    rel={`noopener noreferrer${candidate.id !== 'zohran-mamdani' ? ' nofollow' : ''}`}
+                    className="bg-white text-primary hover:bg-accent hover:text-white font-bold py-2 px-4 rounded transition-colors duration-300 flex items-center justify-center"
+                  >
+                    <Icon name="Instagram" className="w-5 h-5 mr-2" />
+                    Follow on Instagram
+                  </a>
+                )}
+                
+                {candidate.socialMedia?.facebook && (
+                  <a 
+                    href={`https://facebook.com/${candidate.socialMedia.facebook}`}
+                    target="_blank"
+                    rel={`noopener noreferrer${candidate.id !== 'zohran-mamdani' ? ' nofollow' : ''}`}
+                    className="bg-white text-primary hover:bg-accent hover:text-white font-bold py-2 px-4 rounded transition-colors duration-300 flex items-center justify-center"
+                  >
+                    <Icon name="Facebook" className="w-5 h-5 mr-2" />
+                    Follow on Facebook
+                  </a>
+                )}
               </div>
             </div>
           </div>

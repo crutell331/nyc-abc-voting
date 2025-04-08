@@ -9,8 +9,9 @@ export const candidates: Candidate[] = [
     endorsements: ['DSA', 'Working Families Party', 'Make the Road NY'],
     website: 'https://www.zohranfornyc.com/',
     socialMedia: {
-      twitter: '@zohranmamdani',
-      instagram: '@zohranmamdani',
+      twitter: '@ZohranKMamdani',
+      instagram: '@ZohranKMamdani',
+      facebook: 'ZohranKMamdani'
     },
   },
   {
@@ -34,8 +35,9 @@ export const candidates: Candidate[] = [
     endorsements: ['Various Labor Unions', 'Queens Democratic Party'],
     website: null,
     socialMedia: {
-      twitter: '@adrienneadamsnyc',
-      instagram: '@speakeradams',
+      twitter: '@nycspeakeradams',
+      instagram: '@nycspeakeradams',
+      facebook: 'NYCSpeakerAdams'
     },
   },
   {
@@ -47,7 +49,8 @@ export const candidates: Candidate[] = [
     website: 'https://www.landerfornyc.com/',
     socialMedia: {
       twitter: '@bradlander',
-      instagram: '@bradlander',
+      instagram: '@brad.lander',
+      facebook: 'bradlander'
     },
   },
   {
@@ -60,6 +63,7 @@ export const candidates: Candidate[] = [
     socialMedia: {
       twitter: '@scottmstringer',
       instagram: '@scottmstringer',
+      facebook: 'scottmstringer'
     },
   },
   {
@@ -71,7 +75,8 @@ export const candidates: Candidate[] = [
     website: 'https://www.zellnor.nyc/',
     socialMedia: {
       twitter: '@zellnor4ny',
-      instagram: '@zellnor4ny',
+      instagram: '@zellnormyrie',
+      facebook: 'zellnorfornewyork'
     },
   },
 ];
