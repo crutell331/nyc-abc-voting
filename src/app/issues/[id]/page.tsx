@@ -245,14 +245,14 @@ export default function IssuePage({ params }: { params: { id: string } }) {
               {issue.id === 'economy' && (
                 <>
                   <div className="flex items-center mb-4">
-                    <Icon name="DollarSign" className="w-6 h-6 text-blue-600 mr-3" />
-                    <h3 className="text-xl font-bold">Economic Justice</h3>
+                    <Icon name="DollarSign" className="w-6 h-6 text-primary mr-3" />
+                    <h3 className="text-xl font-bold">Working Class Economics</h3>
                   </div>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-foreground/80 mb-4">
                     The COVID-19 pandemic has deepened economic inequalities in New York City, with low-wage workers, 
                     small businesses, and communities of color experiencing the most severe impacts.
                   </p>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-foreground/80 mb-4">
                     The next mayor must work to create a more equitable economy, with living wages, strong worker protections, 
                     support for small businesses, and investments in communities that have been historically marginalized.
                   </p>

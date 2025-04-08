@@ -39,7 +39,7 @@ export const issues: Issue[] = [
   },
   {
     id: 'economy',
-    title: 'Economic Justice',
+    title: 'Working Class Economics',
     description: 'Policies on wages, worker protections, and economic development.',
     icon: 'DollarSign',
   },

@@ -121,7 +121,7 @@ export default function Home() {
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {issues.slice(0, 6).map(issue => (
+            {issues.map(issue => (
               <IssueCard key={issue.id} issue={issue} />
             ))}
           </div>

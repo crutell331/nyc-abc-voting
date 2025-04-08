@@ -32,7 +32,7 @@ export default function AboutPage() {
               <p className="text-foreground/80 mb-6">
                 We believe that by focusing on issues rather than personalities, we can help elect a mayor 
                 who will address the city's most pressing challenges: affordable housing, climate justice, 
-                healthcare access, educational equity, police reform, public transportation, and economic justice.
+                healthcare access, educational equity, police reform, public transportation, and working class economics.
               </p>
               
               <div className="bg-blue-50 p-6 rounded-lg">
