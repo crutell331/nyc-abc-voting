@@ -5,7 +5,7 @@ export const candidates: Candidate[] = [
     id: 'zohran-mamdani',
     name: 'Zohran Mamdani',
     image: '/images/candidates/zohran-mamdani.jpg',
-    bio: 'Zohran Mamdani is a current New York State Assemblymember representing Astoria. Before being elected to office, he worked as a housing counselor helping immigrant families facing eviction. He has been a vocal advocate for affordable housing, universal healthcare, and public transportation.',
+    bio: 'Zohran Mamdani is a current New York State Assembly member representing Astoria. Before being elected to office, he worked as a housing counselor helping immigrant families facing eviction. He has been a vocal advocate for affordable housing, universal healthcare, and public transportation.',
     endorsements: ['DSA', 'Working Families Party', 'Make the Road NY'],
     website: 'https://www.zohranfornyc.com/',
     socialMedia: {

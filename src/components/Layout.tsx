@@ -91,7 +91,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
           
           <div className="mt-8 pt-8 border-t border-foreground/20 text-center text-foreground/70">
-            <p>© {new Date().getFullYear()} NYC Democratic Primary Voting Guide. Not affiliated with any official government entity.</p>
+            <p className="mb-2">© {new Date().getFullYear()} NYC Democratic Primary Voting Guide. Not affiliated with any official government entity.</p>
+            <p>
+              <Link href="/about/disclaimer" className="text-primary hover:text-primary-dark">
+                Disclaimer & Information Sources
+              </Link>
+            </p>
           </div>
         </div>
       </footer>

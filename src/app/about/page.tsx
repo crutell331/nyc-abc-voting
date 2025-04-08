@@ -10,7 +10,7 @@ export default function AboutPage() {
         subtitle="Learn more about the 'Anyone But Cuomo' initiative and why it matters for the future of NYC."
       />
       
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
@@ -35,29 +35,29 @@ export default function AboutPage() {
                 healthcare access, educational equity, police reform, public transportation, and working class economics.
               </p>
               
-              <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="bg-light-bg p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-4">Our Values</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <Icon name="Check" className="w-5 h-5 text-green-500 mr-2 mt-1" />
+                    <Icon name="Check" className="w-5 h-5 text-accent mr-2 mt-1" />
                     <span className="text-foreground/80">
                       <strong>Democracy:</strong> We believe in empowering voters with information and expanding democratic participation.
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Icon name="Check" className="w-5 h-5 text-green-500 mr-2 mt-1" />
+                    <Icon name="Check" className="w-5 h-5 text-accent mr-2 mt-1" />
                     <span className="text-foreground/80">
                       <strong>Justice:</strong> We advocate for policies that address systemic inequalities and promote social, economic, and racial justice.
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Icon name="Check" className="w-5 h-5 text-green-500 mr-2 mt-1" />
+                    <Icon name="Check" className="w-5 h-5 text-accent mr-2 mt-1" />
                     <span className="text-foreground/80">
                       <strong>Community:</strong> We believe in building a city that works for all New Yorkers, not just the wealthy and well-connected.
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Icon name="Check" className="w-5 h-5 text-green-500 mr-2 mt-1" />
+                    <Icon name="Check" className="w-5 h-5 text-accent mr-2 mt-1" />
                     <span className="text-foreground/80">
                       <strong>Transparency:</strong> We are committed to providing clear, accurate information about candidates and issues.
                     </span>
@@ -78,7 +78,7 @@ export default function AboutPage() {
               </p>
               
               <div className="space-y-6 mb-8">
-                <div className="border-l-4 border-red-500 pl-4">
+                <div className="border-l-4 border-secondary pl-4">
                   <h4 className="font-bold mb-2">Corporate Influence</h4>
                   <p className="text-foreground/80">
                     Throughout his tenure as governor, Cuomo consistently sided with corporate interests 
@@ -87,7 +87,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 
-                <div className="border-l-4 border-red-500 pl-4">
+                <div className="border-l-4 border-secondary pl-4">
                   <h4 className="font-bold mb-2">Blocking Working Class Legislation</h4>
                   <p className="text-foreground/80">
                     Cuomo repeatedly obstructed working class legislation, including tenant protections,
@@ -95,7 +95,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 
-                <div className="border-l-4 border-red-500 pl-4">
+                <div className="border-l-4 border-secondary pl-4">
                   <h4 className="font-bold mb-2">Mishandling of the Pandemic</h4>
                   <p className="text-foreground/80">
                     Cuomo's handling of the COVID-19 pandemic raised serious concerns, particularly regarding 
@@ -103,7 +103,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 
-                <div className="border-l-4 border-red-500 pl-4">
+                <div className="border-l-4 border-secondary pl-4">
                   <h4 className="font-bold mb-2">Ethical Concerns</h4>
                   <p className="text-foreground/80">
                     Cuomo's administration was plagued by ethical scandals, including allegations of sexual 
@@ -123,7 +123,7 @@ export default function AboutPage() {
         </div>
       </section>
       
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-light-bg">
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Join the Movement"
@@ -132,9 +132,9 @@ export default function AboutPage() {
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Icon name="Share2" className="w-6 h-6 text-blue-600" />
+            <div className="bg-background p-6 rounded-lg shadow-sm">
+              <div className="bg-primary/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Icon name="Share2" className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-2">Spread the Word</h3>
               <p className="text-foreground/80 mb-4">
@@ -143,9 +143,9 @@ export default function AboutPage() {
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Icon name="Users" className="w-6 h-6 text-blue-600" />
+            <div className="bg-background p-6 rounded-lg shadow-sm">
+              <div className="bg-primary/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Icon name="Users" className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-2">Volunteer</h3>
               <p className="text-foreground/80 mb-4">
@@ -154,9 +154,9 @@ export default function AboutPage() {
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Icon name="Vote" className="w-6 h-6 text-blue-600" />
+            <div className="bg-background p-6 rounded-lg shadow-sm">
+              <div className="bg-primary/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Icon name="Vote" className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-2">Vote</h3>
               <p className="text-foreground/80 mb-4">
