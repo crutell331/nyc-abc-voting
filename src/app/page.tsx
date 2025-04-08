@@ -108,7 +108,7 @@ export default function Home() {
               <p className="text-foreground/80 mb-4">
                 <strong>A</strong>nyone <strong>B</strong>ut <strong>C</strong>uomo is more than a slogan—it&apos;s a strategy for 
                 ensuring that a working class candidate who represents the interests of working New Yorkers wins this election. 
-                Not someone who looks out for their rich friends and corporate donors and not someone who <a href="https://www.politico.com/news/2024/01/26/cuomo-sexual-harassment-doj-00138140" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:text-primary-dark underline">sexually harassed, discriminated against, and bullied,</a> the very people he's supposed to protect.
+                Not someone who looks out for their rich friends and corporate donors and not someone who <a href="https://www.politico.com/news/2024/01/26/cuomo-sexual-harassment-doj-00138140" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:text-primary-dark underline">sexually harassed, discriminated against, and bullied,</a> the very people he&apos;s supposed to protect.
               </p>
               <p className="text-foreground/80 mb-4">
                 There is a valid fear that Andrew Cuomo would not adequately protect working class New Yorkers. As governor, 
@@ -119,13 +119,13 @@ export default function Home() {
                 him ill-suited to lead our city during these challenging times.
               </p>
               <p className="text-foreground/80 mb-4">
-                Politics is difficult and it's hard to know who to trust. By focusing on issues rather than personalities, we aim to help voters make informed choices about which 
+                Politics is difficult and it&apos;s hard to know who to trust. By focusing on issues rather than personalities, we aim to help voters make informed choices about which 
                 candidates truly align with their values.
               </p>
               <p className="text-foreground/80">
                 Our guide highlights every candidate running for NYC mayor. It details each of their stances on key issues affecting the working class.
                  All here in one place so you can more easily see which candidates have demonstrated their commitment to fighting for you. 
-                 It's time politicans work for us, not the other way around.
+                 It&apos;s time politicans work for us, not the other way around.
               </p>
             </div>
           </div>
