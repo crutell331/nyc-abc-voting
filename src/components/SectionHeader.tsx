@@ -16,7 +16,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">{title}</h2>
       
       {subtitle && (
-        <p className="text-xl text-foreground/80 max-w-3xl">
+        <p className={`text-xl text-foreground/80 max-w-3xl ${centered ? 'mx-auto' : ''}`}>
           {subtitle}
         </p>
       )}
