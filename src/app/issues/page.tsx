@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { candidates } from '@/data/candidates';
 import { Issue, Candidate } from '@/types';
+import Icon from '@/components/Icon';
 
 export default function IssuesPage() {
   const allIssues = issues;
@@ -53,9 +54,10 @@ export default function IssuesPage() {
                   </div>
                   <h3 className="text-xl font-bold text-foreground">{candidate.name}</h3>
                 </div>
-                <p className="text-foreground/80">
-                  View {candidate.name}&apos;s positions on all issues.
-                </p>
+                <div className="flex items-center text-primary hover:text-primary-dark font-medium">
+                  <span>View {candidate.name}&apos;s positions on all issues</span>
+                  <Icon name="ArrowRight" className="w-4 h-4 ml-2" />
+                </div>
               </Link>
             ))}
           </div>
