@@ -1,7 +1,7 @@
 # NYC Democratic Primary Voting Guide
 Built at the request of a friend working in local politics in NYC. Website to be shared with prospective voters to make it easy to view and compare all candidates in the upcoming NYC Democratic primary election. Site can be viewed [HERE](https://nyc-abc-voting-guide.vercel.app/)
 
-![screenshot of webpage](./images/siteimage.png "Candidates Page")
+![screenshot of webpage](./images/siteimage.png)
 
 # Tech Stack
 
