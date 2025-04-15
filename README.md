@@ -12,7 +12,7 @@ Built at the request of a friend working in local politics in NYC. Website to be
 
 - [x] Utilize star ratings to show how aligned candidates are with certain policies
 
-- [x] Overall star rating to rank candidates by general policy positions
+    - [x] Overall star rating to rank candidates by general policy positions
 
 - [x] Explain rank choice voting and the importance of not ranking a specific candidate if you support working class policies
 
